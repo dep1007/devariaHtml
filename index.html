@@ -7,27 +7,30 @@
     <title>Olá mundo!</title>
 </head>
 <body>
-    <header> <!--header é cabeçalho-->
+    <header> <!--header é cabeçalho. Ele fica fixo. Não muda a página.-->
         <h1>Hello word. This is my first page</h1> <!--sempre começa com marcação de título-->
-        <nav> <!--para ter coerencia na estrutura da pagina. Tudo que está aqui é conteudo de navegação, que é menu, botoes, etc.-->
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="professores.html">Professores</a></li>
+        <nav> <!--para ter coerencia na estrutura da pagina. Tudo que está aqui é conteudo de navegação, que é menu, botoes, etc Ele diz "estou abrindo aqui uma lista".-->
+            <ul> <!--aqui que começa abrir a lista-->
+                <li><a href="index.html">Home</a></li> <!--aqui começa a lista.-->
+                <li><a href="professores.html">Professores</a></li> <!--<a></a> sempre acompanhada do href e vou direcionar algo nela. Preciso fazer isso para home, professores e faleconosco, pois eu vou clicar e vai entrar e ser direcionado para algum link. Coloco no <li> pq vai abrir nele. --> <!--obs: o home, professores e fale conosco tem que ficar dentro da tag <a></a>-->
                 <li><a href="faleConosco.html">Fale conosco</a></li>
                 
             </ul>
         </nav>
     </header> <!--quando termino o menu-->
     
-<main>
+<main> <!--utilizo o main para o conteúdo principal. Tudo que tiver dentro dele é a nossa página. Depois dele vem a section, que vai marcar a sessao. -->
     <section>
-        <img src="devaria.jpg" width="500px" alt="Devaria Olá Mundo"/> <!--aqui, eu tirei o height, pois, colocando somente o width o brownser já entende e redimensiona a imagem automaticamente. -->
+        <img src="https://www.devaria.com.br/static/media/template_video_dark.0175f672.svg" width="500px" alt="Devaria Olá Mundo"/> <!--aqui, eu tirei o height, pois, colocando somente o width o brownser já entende e redimensiona a imagem automaticamente. -->
     </section>
 </main>
 
 <footer> 
-    <span>contato@devaria.com.br</span> <br>
+    <section>
+    <span>contato@devaria.com.br</span> <br> <!--span é marcação como parte do texto-->
     <span>Conheça nosso canal no youtube</span>
+    </section>
+    
 </footer>
 </body>
 </html>
