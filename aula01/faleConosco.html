@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+</head>
+<body>
+    <header> <!--header é cabeçalho. Ele fica fixo. Não muda a página.-->
+        <h1>Fale Conosco</h1> 
+                <li><a href="index.html">Home</a></li> 
+                <li><a href="professores.html">Professores</a></li> 
+                <li><a href="faleConosco.html">Fale conosco</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Para mandar uma mensagem para a devaria, preencha o campo abaixo e clique em enviar</h2>
+
+        <section>
+            <form action="index.html">
+                <p>
+                    <label>Nome</label> <input type="text" name="Nome" maxlength="50"/> <!--input precisa de um fechamento na mesma tag--> <!--maxlenght é o máximo de caracteres.-->
+                </p>
+                <p>
+                    <label>E-mail</label><input type="text" name="Email" maxlength="150"/>
+                </p>
+                
+                <p>
+                    <label>Comentários</label><textarea name="Comentario" rows="4" cols="50"></textarea> <!--text area é para escrever, diferente do imput.-->
+                </p>
+
+                <p>
+                    <label>Sexo</label>
+                    <input type="radio" name="Sexo"/><label>Feminino</label> <!--OBS: se eu colocar nome diferente, exemplo, sexo e sexo2, eu vou poder selecionar os 2 ao mesmo tempo. Para ser um ou outro, tem que ser o mesmo nome.-->
+                    <input type="radio" name="Sexo"/><label>Masculino</label>
+                </p>
+
+            <p>
+                <label>Onde nos conheceu?</label>
+                <select name="conheceu">
+                    <option selected>youtube</option> <!--option selected quer dizer que vai aparecer na option primeiro. Se eu colocar no google, vai aparecer lá.-->
+                    <option>Google</option>
+                    <option>Amigos</option>
+                    <option>Outros</option>
+                </select>
+            </p>
+            <p>
+                <input type="checkbox" name="Novidades" value="Aceite"/><!--diferente do radio, aqui pode colocar quantos quiser-->
+                <label>Aceito receber e-mails de novidade</label>
+            </p>
+            <p>
+                <input type="submit" name="Enviar" value="Enviar"/>
+                <input type="reset" name="Limpar" value="Limpar"/>
+            </p>
+                
+            </form>
+        </section>
+    </main>
+    <footer> 
+        <section>
+        <span>contato@devaria.com.br</span> <br> <!--span é marcação como parte do texto-->
+        <span>Conheça nosso canal no youtube</span>
+        </section>
+        
+    </footer>   
+</body>
+</html>
