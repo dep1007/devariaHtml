@@ -1,34 +1,76 @@
-<!DOCTYPE html> <!--é o tipo de documento-->
-<html lang="pt-br"> <!--propriedade do html. O  html está na lingua brasileira, pois o google que vai ler qual lingua eu quero ver.-->
-<head> <!--configurações e parametros-->
-    <meta charset="UTF-8"> <!-- meta serve para colocar diretrizes para que o browser entenda o que a gente precisa. Serve para v[arias configs. Já o charset identifica os caracteres da página. (seria o teclado, se vai ter cedilha, etc) No japao nao funciona o UTF-8-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Olá mundo!</title>
+    <title>Devstars</title>
 </head>
 <body>
     <header> <!--header é cabeçalho. Ele fica fixo. Não muda a página.-->
-        <h1>Hello word. This is my first page</h1> <!--sempre começa com marcação de título-->
+        <h1>HRanking Devstars</h1> <!--sempre começa com marcação de título-->
         <nav> <!--para ter coerencia na estrutura da pagina. Tudo que está aqui é conteudo de navegação, que é menu, botoes, etc Ele diz "estou abrindo aqui uma lista".-->
             <ul> <!--aqui que começa abrir a lista-->
                 <li><a href="index.html">Home</a></li> <!--aqui começa a lista.-->
                 <li><a href="professores.html">Professores</a></li> <!--<a></a> sempre acompanhada do href e vou direcionar algo nela. Preciso fazer isso para home, professores e faleconosco, pois eu vou clicar e vai entrar e ser direcionado para algum link. Coloco no <li> pq vai abrir nele. --> <!--obs: o home, professores e fale conosco tem que ficar dentro da tag <a></a>-->
                 <li><a href="faleConosco.html">Fale conosco</a></li>
-                <li><a href="DevStars.html">DevsTars</a></li>
+                <li><a href="DevStars.html"></a>DevsTars</li>
                 
             </ul>
         </nav>
     </header> <!--quando termino o menu-->
     
 <main> <!--utilizo o main para o conteúdo principal. Tudo que tiver dentro dele é a nossa página. Depois dele vem a section, que vai marcar a sessao. -->
+    <h2>Como funcionam os pontos DevStar?</h2>
     <section>
-        <img src="https://www.devaria.com.br/static/media/template_video_dark.0175f672.svg" width="500px" alt="Devaria Olá Mundo"/> <!--aqui, eu tirei o height, pois, colocando somente o width o brownser já entende e redimensiona a imagem automaticamente. -->
+        
+        <h3>Pontos recebidos através de desafios</h3>
+        <table>
+            <thead>
+                <th>-</th>
+                <th>No dia</th>
+                <th>Na semana</th>
+                <th>Depois de uma semana</th>
+            </thead>
+            <tbody>
+                <tr>
+                <td>Pontuação</td>
+                <td>1250 xp</td>
+                <td>1000 xp</td>
+                <td>750 xp</td>
+
+                </tr>
+        </tbody>
+        </table>
+    
+    </section>
+    <br><br>
+    <section>
+        <h3>Pontuação dos Comentários</h3>
+    <table>
+        <thead>
+            <th>-</th>
+            <th>Menos de 5</th>
+            <th>De 5 a 10</th>
+            <th>Mais que 10</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pontuação</td>
+                <td>50xp</td>
+                <td>80xp</td>
+                <td>100xp</td>
+            </tr>
+        </tbody>
+    </table>
     </section>
     <section>
         <div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/BzN8gxjXTKQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.devaria.com.br/devstars" width="1200" height="400"></iframe> <!--aqui o iframe coloco o site de outro lugar. -->
         </div>
-    </section> <!--aqui, para colocar vídeo no youtube, utilizo o iframde do próprio youtube. A tag do vídeo vai ser <video> e só quando eu tiver o video no meu pc.-->
+    </section>
+    <br>
+    <br>
 </main>
 
 <footer> 
@@ -40,5 +82,3 @@
 </footer>
 </body>
 </html>
-
-<!--a primeira pagina chama index, exceto quando é login-->
