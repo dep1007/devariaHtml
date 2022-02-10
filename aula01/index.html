@@ -8,14 +8,18 @@
     <meta name="keywords" content="devaria, programação, aulas ao vivo, formação de graça."/>
     <meta name="author" content="Ligia Ribeiro"/>
     <meta http-equiv="refresh" content="300"/><!--só colocar se realmente precisar dar refresh na página/-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--precisa dessa tag para ajustar de acordo com o dispositivo-->
+
     <title>Olá mundo!</title>
+
+    <link rel="stylesheet" href="public/css/index.css"> <!--css fica como ultimo antes do fim do head.-->
 </head>
 <body>
-    <header> <!--header é cabeçalho. Ele fica fixo. Não muda a página.-->
+    <header style="color: green;"> <!--header é cabeçalho. Ele fica fixo. Não muda a página.--> <!--nunca esquecer o ; no css-->
         <h1>Hello word. This is my first page</h1> <!--sempre começa com marcação de título-->
-        <nav> <!--para ter coerencia na estrutura da pagina. Tudo que está aqui é conteudo de navegação, que é menu, botoes, etc Ele diz "estou abrindo aqui uma lista".-->
+        <nav class="color-pinku"> <!--para ter coerencia na estrutura da pagina. Tudo que está aqui é conteudo de navegação, que é menu, botoes, etc Ele diz "estou abrindo aqui uma lista".-->
             <ul> <!--aqui que começa abrir a lista-->
-                <li><a href="index.html">Home</a></li> <!--aqui começa a lista.-->
+                <li><a href="index.html" id="link-home">Home</a></li> <!--aqui começa a lista.-->
                 <li><a href="professores.html">Professores</a></li> <!--<a></a> sempre acompanhada do href e vou direcionar algo nela. Preciso fazer isso para home, professores e faleconosco, pois eu vou clicar e vai entrar e ser direcionado para algum link. Coloco no <li> pq vai abrir nele. --> <!--obs: o home, professores e fale conosco tem que ficar dentro da tag <a></a>-->
                 <li><a href="faleConosco.html">Fale conosco</a></li>
                 <li><a href="DevStars.html">DevsTars</a></li>
@@ -44,7 +48,7 @@
 
 <footer> 
     <section>
-    <span>contato@devaria.com.br</span> <br> <!--span é marcação como parte do texto-->
+    <span class="color-brown">contato@devaria.com.br</span> <br> <!--span é marcação como parte do texto-->
     <span>Conheça nosso canal no youtube</span>
     </section>
     
