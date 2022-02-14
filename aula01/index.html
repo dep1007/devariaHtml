@@ -11,25 +11,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--precisa dessa tag para ajustar de acordo com o dispositivo-->
 
     <title>Olá mundo!</title>
-
+    <link rel="stylesheet" href="public/css/header.css">
     <link rel="stylesheet" href="public/css/index.css"> <!--css fica como ultimo antes do fim do head.-->
+    <link rel="stylesheet" href="public/css/devaria.css">
 </head>
 <body>
-    <header style="color: green;"> <!--header é cabeçalho. Ele fica fixo. Não muda a página.--> <!--nunca esquecer o ; no css-->
-        <h1>Hello word. This is my first page</h1> <!--sempre começa com marcação de título-->
-        <nav class="color-pinku"> <!--para ter coerencia na estrutura da pagina. Tudo que está aqui é conteudo de navegação, que é menu, botoes, etc Ele diz "estou abrindo aqui uma lista".-->
+    <header> <!--header é cabeçalho. Ele fica fixo. Não muda a página.--> <!--nunca esquecer o ; no css-->
+        <a href="index.html" class="link-logo">
+            <img src="public/css/fotos/logo-devaria-02.933327f5.svg" alt="Logo devaria" />
+        </a>
+        <nav class="menu"> <!--para ter coerencia na estrutura da pagina. Tudo que está aqui é conteudo de navegação, que é menu, botoes, etc Ele diz "estou abrindo aqui uma lista".-->
             <ul> <!--aqui que começa abrir a lista-->
-                <li><a href="index.html" id="link-home">Home</a></li> <!--aqui começa a lista.-->
+                <li><a href="index.html">Home</a></li> <!--aqui começa a lista.-->
                 <li><a href="professores.html">Professores</a></li> <!--<a></a> sempre acompanhada do href e vou direcionar algo nela. Preciso fazer isso para home, professores e faleconosco, pois eu vou clicar e vai entrar e ser direcionado para algum link. Coloco no <li> pq vai abrir nele. --> <!--obs: o home, professores e fale conosco tem que ficar dentro da tag <a></a>-->
                 <li><a href="faleConosco.html">Fale conosco</a></li>
                 <li><a href="DevStars.html">DevsTars</a></li>
-                
-            </ul>
-        </nav>
-    </header> <!--quando termino o menu-->
-    
-<main> <!--utilizo o main para o conteúdo principal. Tudo que tiver dentro dele é a nossa página. Depois dele vem a section, que vai marcar a sessao. -->
-    <section>
+                    
+                </ul>
+            </nav>
+        </header> <!--quando termino o menu-->
+        
+        <main> <!--utilizo o main para o conteúdo principal. Tudo que tiver dentro dele é a nossa página. Depois dele vem a section, que vai marcar a sessao. -->
+            <h1 class="title">Hello word. This is my first page</h1> <!--sempre começa com marcação de título-->
+        <section class="cover-container">
         <figure>
             <img src="https://www.devaria.com.br/static/media/template_video_dark.0175f672.svg" width="500px" alt="Devaria Olá Mundo"/> <!--aqui, eu tirei o height, pois, colocando somente o width o brownser já entende e redimensiona a imagem automaticamente. -->
             <figcaption>Foto de capa Devaria</figcaption>

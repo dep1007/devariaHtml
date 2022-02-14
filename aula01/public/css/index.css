@@ -1,22 +1,3 @@
-h3 {
-    color: rgb(124, 42, 92);
-}
-
-a {
-    color: brown;
-}
-
-.color-brown { 
-    color: rgb(124, 60, 60);
-} /*aqui você coloca . e nome da classe*/
-
-.color-pink {
-    color: rgb(199, 124, 195);
-}
-#link-home {
-    color: black;
-} /* aqui você coloca # para ID*/
-
-.color-pinku ul li a {
-    color: rgb(207, 38, 182);
+.cover-container figure img {
+    width: 100%;
 }
