@@ -1,0 +1,16 @@
+footer {
+    text-align: center;
+    border-top: 1px solid #f0f5ff; /*aquela linha*/
+    padding: 20px;
+    width: 75%; /*para diminuir a linha*/
+    margin: auto; /* para ela ficar no centro e não na direita*/
+    text-transform: lowercase; /*deixa todas as letras minusculas*/
+}
+
+footer section span:first-child{
+    color: #5e49ff;
+}
+
+footer section span:last-child{
+    color: #3bd42d;
+}
